@@ -1,4 +1,4 @@
-sentence-transformers==2.2.2
+sentence-transformers
 langchain
 pypdf
 python-dotenv
@@ -7,5 +7,6 @@ langchain_community
 streamlit
 langchain_groq
 faiss-cpu
+ipykernel
 langchain_huggingface
 -e .
