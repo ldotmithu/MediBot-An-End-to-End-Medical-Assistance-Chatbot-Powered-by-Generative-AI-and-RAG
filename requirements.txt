@@ -6,9 +6,6 @@ langchain-pinecone
 langchain_community
 streamlit
 langchain_groq
-langchain_community
 faiss-cpu
-python-dotenv
-pypdf
 langchain_huggingface
 -e .
