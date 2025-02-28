@@ -96,7 +96,11 @@ The **Medical Chatbot** is a **Streamlit-based web application** that integrates
 
 ## 📜 **License**
 📄 This project is licensed under the **Apache License**. See the [LICENSE](LICENSE) file for details.
+---
 
+## **Glance of the Project**
+
+![image](https://github.com/ldotmithu/Dataset/blob/main/Screenshot%202025-02-28%20235625.png)
 ---
 
 ### 💡 If you find this project useful, give it a ⭐ on GitHub! 🚀
