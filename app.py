@@ -40,38 +40,38 @@ def main():
     st.title("🩺 Medical Chatbot")
     st.markdown("Welcome to the Medical Chatbot! Ask any medical-related questions, and I'll do my best to provide accurate and concise answers.")
 
-    # Initialize session state for chat history
+
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    # Display chat history
+    
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # User input
+  
     user_input = st.chat_input("Ask a medical question...")
 
     if user_input:
-        # Add user message to chat history
+        
         st.session_state.messages.append({"role": "user", "content": user_input})
 
-        # Display user message
+        
         with st.chat_message("user"):
             st.markdown(user_input)
 
-        # Get bot response
+
         with st.spinner("Thinking..."):
             response = rag_chain.invoke({"input": user_input})
             bot_response = response["answer"]
 
-        # Add bot response to chat history
+       
         st.session_state.messages.append({"role": "assistant", "content": bot_response})
 
-        # Display bot response
+      
         with st.chat_message("assistant"):
             st.markdown(bot_response)
 
-# Run the app
+
 if __name__ == "__main__":
     main()
